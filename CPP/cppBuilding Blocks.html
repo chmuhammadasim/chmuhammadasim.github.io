@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>C++</title>
+    <meta name="author" content="chmuhammadasim" />
+    <meta name="description" content="BLog About C++" />
+    <meta name="keywords" content="C++, Compiler, string, int, cout, cin, forloop" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+  </head>
+
+  
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+	<nav id="header" class="fixed w-full z-10 top-0 ">
+
+		<div id="progress" class="h-1 z-20 top-0" style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+
+		<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+
+			<div class="pl-4">
+				<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="./cppIntroduction.html">
+					Getting Started with C++ Programming
+				</a>
+			</div>
+
+			<div class="block lg:hidden pr-4">
+				<button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none">
+					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<title>Menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					</svg>
+				</button>
+			</div>
+
+			<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20" id="nav-content">
+				<ul class="list-reset lg:flex justify-end flex-1 items-center">
+					<li class="mr-3">
+						<a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="https://github.com/chmuhammadasim">Github</a>
+					</li>
+					<li class="mr-3">
+						<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="https://www.linkedin.com/in/muhammad-asim-chattha/">Linkedin</a>
+					</li>
+					<li class="mr-3">
+						<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="https://asimchattha.site">Portfolio</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--Container-->
+	<div class="container w-full md:max-w-3xl mx-auto pt-10 p-5">
+
+		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+			<!--Title-->
+			<div class="font-sans">
+				
+						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+							Understanding C++ Syntax: The Building Blocks</h1>
+						<p class="text-sm md:text-base font-normal text-gray-600">Published 1 September 2023</p>
+			</div>
+            <hr class="border-b-2 border-gray-400 mb-8 mx-4 mt-4">
+
+			<!--Post Content-->
+
+
+			<!--Lead Para-->
+			<p class="py-6">
+				👋 Welcome to the world of programming, where the language you use to communicate with computers is a bit different from human languages. Don't worry, though – it's just like learning a new way to talk. In this guide, we'll explore the basic building blocks of C++ syntax. Think of syntax as the grammar of the programming language. Once you get the hang of it, you'll be able to tell the computer exactly what you want it to do.
+			</p>
+
+			
+
+
+			<h1 class="py-3 font-sans text-3xl font-bold">Statements and Semicolons</h1>
+			<p class="py-6">In C++, each instruction you give to the computer is called a statement. Just like sentences in English, statements need punctuation – in this case, a semicolon (;). It's like a full stop at the end of a sentence.</p>
+            <pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+#include <iostream> // This is a statement
+	using namespace std;
+	
+	int main() {
+		cout << "Hello, World!"; // This is another statement
+		return 0; // Don't forget the semicolon here too!
+	}						
+				</code>
+			</pre>
+            
+            <h1 class="py-3 font-sans text-3xl font-bold">Curly Braces: Code Blocks</h1>
+			<p class="py-6">Imagine you're organizing your closet. You put related items together in boxes. In programming, curly braces {} are like those boxes. They group statements into code blocks. Functions, loops, and conditionals all use code blocks.</p>
+            <pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+int main() {
+	// This is the start of the main function's code block
+	cout << "Hello, ";
+	cout << "World!";
+	// This is the end of the main function's code block
+	return 0;
+}					
+				</code>
+			</pre>
+			
+            <h1 class="py-3 font-sans text-3xl font-bold">Comments: Notes for Humans</h1>
+			<p class="py-6">Just like you leave sticky notes for reminders, you can add comments to your code. They're for humans, not computers. Comments start with // and help you understand your code later or explain things to others.</p>
+            <pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+// This is a comment
+int apples = 5; // This is a comment too									
+				</code>
+			</pre>
+            
+            <h1 class="py-3 font-sans text-3xl font-bold">White Spaces: Formatting</h1>
+			<p class="py-6">In programming, spaces, tabs, and new lines are like spaces in your writing. They make your code readable and organized. But computers don't care if you have one space or many – they treat them the same.</p>
+            <pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+int x=5; // This works, but...
+int y    =   10; // This is easier to read														
+				</code>
+			</pre>
+
+
+			<h1 class="py-3 font-sans text-3xl font-bold">Case Sensitivity</h1>
+			<p class="py-6">C++ cares about capitalization. It treats uppercase and lowercase letters as different things. So, myVariable and myvariable are not the same!</p>
+            
+
+			<h1 class="py-3 font-sans text-3xl font-bold">Putting It All Together</h1>
+			<p class="py-6">C++ has special words reserved for specific tasks, like int for integers or if for conditions. These are called keywords. You can't use them for anything other than their intended purpose.</p>
+
+            <pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+#include <iostream>
+	using namespace std;
+	
+	int main() {
+		// This program prints a message
+		cout << "Welcome to the world of C++ programming!";
+		return 0;
+	}																			
+				</code>
+			</pre>
+
+                <h1 class="py-3 font-sans text-3xl font-bold">In Conclusion</h1>
+                <p class="py-6">Understanding C++ syntax is like learning the alphabet of a new language. Once you've got the basics down, you can start crafting more complex programs. Just remember, every language has its rules, and C++ is no different. Keep practicing, and soon you'll be conversing with computers like a pro!</p>
+            
+			<blockquote class="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12">“Learning the art of programming, like most other disciplines, consists of first learning the rules and then learning when to break them.”</blockquote>
+
+			
+
+
+			<!--/ Post Content-->
+
+		</div>
+
+
+		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
+
+		<!--Author-->
+		<div class="flex w-full items-center font-sans px-4 py-12">
+			<img class="w-10 h-10 rounded-full mr-4" src="https://avatars.githubusercontent.com/u/89093185?s=400&u=feeacccd767e40fbc4939a6a6331e17bf8b2a2f5&v=4" alt="Avatar of Author">
+			<div class="flex-1 px-2">
+				<p class="text-base font-bold text-base md:text-xl leading-none mb-2">chmuhammadasim</p>
+				<p class="text-gray-600 text-xs md:text-base">Greetings! I'm Muhammad Asim, a driven Computer Science students, enthusiastic about pushing the boundaries of technology.</p>
+			</div>
+			
+		</div>
+
+		<!--Divider-->
+		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
+
+		<!--Next & Prev Links-->
+		<div class="font-sans flex justify-between content-center px-4 pb-12">
+			<div class="text-left">
+				<span class="text-xs md:text-sm font-normal text-gray-600">&lt; Previous Post</span><br>
+				<p><a href="./cppIntroduction.html" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Getting Started with C++ Programming</a></p>
+			</div>
+			<div class="text-right">
+				<span class="text-xs md:text-sm font-normal text-gray-600">Next Post &gt;</span><br>
+				<p><a href="./basicDataTypes.html" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Understanding Basic Data Types in C++</a></p>
+			</div>
+		</div>
+
+
+		<!--/Next & Prev Links-->
+
+	</div>
+	<!--/container-->
+
+	<footer class="bg-white border-t border-gray-400 shadow">
+		<div class="container max-w-4xl mx-auto flex py-8">
+
+			<div class="w-full mx-auto flex flex-wrap">
+				<div class="flex w-full md:w-1/2 ">
+					<div class="px-8">
+						<h3 class="font-bold text-gray-900">About</h3>
+						<p class="py-4 text-gray-600 text-sm">
+							Greetings! I'm Muhammad Asim, a Computer Science student at Air University. My passion lies in pushing technological boundaries, focusing on DevOps, Flutter, and MEAN Stack Development. With a strong foundation in computer science, I thrive in collaborative environments that value teamwork and diverse ideas. Let's connect to create innovative tech solutions and make a difference together.
+						</p>
+					</div>
+				</div>
+
+				<div class="flex w-full md:w-1/2">
+					<div class="px-8">
+						<h3 class="font-bold text-gray-900">Social</h3>
+						<ul class="list-reset items-center text-sm pt-3">
+							<li>
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="https://github.com/chmuhammadasim">Github</a>
+							</li>
+							<li>
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="https://www.linkedin.com/in/muhammad-asim-chattha/">Linkedin</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</footer>
+
+	<script>
+		/* Progress bar */
+		//Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+		var h = document.documentElement,
+			b = document.body,
+			st = 'scrollTop',
+			sh = 'scrollHeight',
+			progress = document.querySelector('#progress'),
+			scroll;
+		var scrollpos = window.scrollY;
+		var header = document.getElementById("header");
+		var navcontent = document.getElementById("nav-content");
+
+		document.addEventListener('scroll', function() {
+
+			/*Refresh scroll % width*/
+			scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+			progress.style.setProperty('--scroll', scroll + '%');
+
+			/*Apply classes for slide in bar*/
+			scrollpos = window.scrollY;
+
+			if (scrollpos > 10) {
+				header.classList.add("bg-white");
+				header.classList.add("shadow");
+				navcontent.classList.remove("bg-gray-100");
+				navcontent.classList.add("bg-white");
+			} else {
+				header.classList.remove("bg-white");
+				header.classList.remove("shadow");
+				navcontent.classList.remove("bg-white");
+				navcontent.classList.add("bg-gray-100");
+
+			}
+
+		});
+
+
+		//Javascript to toggle the menu
+		document.getElementById('nav-toggle').onclick = function() {
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+	</script>
+
+</body>
+
+</html>
