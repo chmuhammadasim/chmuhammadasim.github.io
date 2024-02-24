@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>C++</title>
+    <meta name="author" content="chmuhammadasim" />
+    <meta name="description" content="BLog About C++" />
+    <meta name="keywords" content="C++, Compiler, string, int, cout, cin, forloop" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+  </head>
+
+  
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+	<nav id="header" class="fixed w-full z-10 top-0 ">
+
+		<div id="progress" class="h-1 z-20 top-0" style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+
+		<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+
+			<div class="pl-4">
+				<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="./cppIntroduction.html">
+					Getting Started with C++ Programming
+				</a>
+			</div>
+
+			<div class="block lg:hidden pr-4">
+				<button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none">
+					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<title>Menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					</svg>
+				</button>
+			</div>
+
+			<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20" id="nav-content">
+				<ul class="list-reset lg:flex justify-end flex-1 items-center">
+					<li class="mr-3">
+						<a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="https://github.com/chmuhammadasim">Github</a>
+					</li>
+					<li class="mr-3">
+						<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="https://www.linkedin.com/in/muhammad-asim-chattha/">Linkedin</a>
+					</li>
+					<li class="mr-3">
+						<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="https://asimchattha.site">Portfolio</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--Container-->
+	<div class="container w-full md:max-w-3xl mx-auto pt-10 p-5">
+
+		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+			<!--Title-->
+			<div class="font-sans">
+				
+						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">Getting Started with C++ Programming: A Beginner-Friendly Guide</h1>
+						<p class="text-sm md:text-base font-normal text-gray-600">Published 30 August 2023</p>
+			</div>
+            <hr class="border-b-2 border-gray-400 mb-8 mx-4 mt-4">
+
+			<!--Post Content-->
+
+
+			<!--Lead Para-->
+			<p class="py-6">
+				👋 Welcome fellow Are you curious about the world of programming and looking to dip your toes into coding? Well, you've come to the right place! In this beginner-friendly guide, we'll introduce you to the exciting world of C++ programming. Don't worry if you're new to all of this – we'll start from the very beginning.
+			</p>
+
+			
+
+
+			<h1 class="py-3 font-sans text-3xl font-bold">What is C++?</h1>
+			<p class="py-6">C++ is a powerful and versatile programming language that's widely used in software development. It's known for its ability to create efficient and high-performance applications, from simple programs to complex software systems. C++ is used in various domains, including game development, operating systems, web applications, and more.</p>
+            
+            
+            <h1 class="py-3 font-sans text-3xl font-bold">Why Learn C++?</h1>
+			<p class="py-6">Learning C++ can open doors to many opportunities. Since it's widely used in the industry, having C++ skills on your resume can make you a desirable candidate for various programming jobs. Additionally, understanding C++ will give you a solid foundation for learning other languages in the future.</p>
+			
+            <h1 class="py-3 font-sans text-3xl font-bold">Setting Up Your Environment</h1>
+			<p class="py-6">Before we dive into writing code, you'll need the right tools. To get started, you'll need a text editor or an integrated development environment (IDE). An IDE makes writing, compiling, and running your code much easier. Popular choices include Visual Studio Code, Code::Blocks, and Dev-C++.</p>
+            
+            <h1 class="py-3 font-sans text-xl font-bold">Installing Visual Studio Code (VS Code)</h1>
+			<p class="py-6">Visual Studio Code is a lightweight, powerful code editor that's perfect for C++ programming. Here's how you can get it up and running:</p>
+            <ul class="list-disc">
+				<li class="py-3 ">Go to the official Visual Studio Code website at <a class="text-blue-500 no-underline hover:underline" href="code.visualstudio.com">code.visualstudio.com</a> and click on the "Download" button. Choose the version that matches your operating system (Windows, macOS, or Linux).</li>
+				<li class="py-3">Once the download is complete, run the installer and follow the on-screen instructions. You can typically leave the default settings as they are.</li>
+				<li class="py-3">Open VS Code after installation. In the Extensions sidebar (click on the square icon on the left or press Ctrl+Shift+X), search for "C++" and install the official C/C++ extension provided by Microsoft.</li>
+                <li class="py-3 ">To compile and run your C++ code within VS Code, you'll need a C++ compiler. If you're on Windows, you can install the MinGW compiler. Follow the instructions in the <a class="text-blue-500 no-underline hover:underline" href="https://code.visualstudio.com/docs/cpp/config-mingw">VS Code C++ tutorial</a> to set it up.</li>
+                <li class="py-3"> Open a new folder in VS Code where you plan to store your C++ projects. Create a new file with a .cpp extension (e.g., hello.cpp), write your C++ code, and save it.</li>
+			</ul>
+
+            <h1 class="py-3 font-sans text-xl font-bold">Installing Dev-C++</h1>
+			<p class="py-6">Dev-C++ is a standalone Integrated Development Environment that's tailored for C and C++ programming. Here's how to install it:</p>
+            <ul class="list-disc">
+				<li class="py-3 ">Go to the Dev-C++ website at <a class="text-blue-500 no-underline hover:underline" href="https://www.bloodshed.net/devcpp.html">https://www.bloodshed.net/devcpp.html</a> and click on the "Download it now" link.</li>
+				<li class="py-3">Run the installer you downloaded and follow the installation instructions. You can choose the default settings for most options.</li>
+				<li class="py-3">Open Dev-C++ after installation. Click on "File" > "New" > "Project." Choose "Console Application" and "C++ Project," then follow the prompts to create your project.</li>
+                <li class="py-3 ">In the code editor, write your C++ code. Press the "Compile & Run" button (a green triangle) on the top toolbar, or press F9, to compile and run your program.</li>
+			</ul>
+
+
+            <h1 class="py-3 font-sans text-3xl font-bold">Writing Your First C++ Program</h1>
+			<p class="py-6">Let's write a simple program to get a taste of C++ coding. Our program will display "Hello, World!" on the screen. Here's the code:</p>
+
+
+            <p class="py-6">Example code block:</p>
+			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+#include <iostream>
+
+    int main() {
+        std::cout << "Hello, World!" << std::endl;
+        return 0;
+    }                        
+				</code>
+			</pre>
+
+            <p class="py-6">Let's break it down:</p>
+            <ul class="list-disc">
+				<li class="py-3 ">" #include &lt;iostream&gt; " This line includes a library that provides input and output functionality.</li>
+				<li class="py-3">" int main() " This is the main function where the program execution begins.</li>
+				<li class="py-3">" std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl; "  This line prints "Hello, World!" to the console.</li>
+                <li class="py-3 ">" return 0; " The main function returns an integer value, usually 0 to indicate successful execution.</li>
+			</ul>
+
+
+            <h1 class="py-3 font-sans text-3xl font-bold">Compiling and Running Your Program</h1>
+			<p class="py-6">After writing the code, you need to compile it into a format that your computer can understand. If you're using an IDE, it usually handles this step for you. If not, you can use a command-line compiler like g++.
+
+                Once compiled, you'll get an executable file. Run this file, and you'll see "Hello, World!" displayed on your screen.</p>
+
+                <h1 class="py-3 font-sans text-3xl font-bold">Exploring Further</h1>
+                <p class="py-6">Congratulations! You've written and run your first C++ program. This is just the beginning of your coding journey. From here, you can explore variables, data types, loops, and more. The C++ community offers a wealth of tutorials, forums, and resources to help you along the way.
+
+                    Remember, programming is about practice and persistence. Don't be discouraged by challenges – they're all part of the learning process. So, keep coding and have fun discovering the amazing world of C++!
+                    
+                    In the next blog post, we'll dive deeper into variables and how to manipulate data in your C++ programs. Stay tuned!</p>
+            
+			<blockquote class="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12">Design and programming are human activities; forget that and all is lost.</blockquote>
+
+			
+
+
+			<!--/ Post Content-->
+
+		</div>
+
+
+		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
+
+
+		<!--Subscribe-->
+		<!-- <div class="container px-4">
+			<div class="font-sans bg-gradient-to-b from-green-100 to-gray-100 rounded-lg shadow-xl p-4 text-center">
+				<h2 class="font-bold break-normal text-xl md:text-3xl">Subscribe to my Newsletter</h2>
+				<h3 class="font-bold break-normal text-gray-600 text-sm md:text-base">Get the latest posts delivered right to your inbox</h3>
+				<div class="w-full text-center pt-4">
+					<form action="#">
+						<div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center">
+							<input type="email" placeholder="youremail@example.com" class="flex-1 mt-4 appearance-none border border-gray-400 rounded shadow-md p-3 text-gray-600 mr-2 focus:outline-none">
+							<button type="submit" class="flex-1 mt-4 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div> -->
+		<!-- /Subscribe-->
+
+
+
+		<!--Author-->
+		<div class="flex w-full items-center font-sans px-4 py-12">
+			<img class="w-10 h-10 rounded-full mr-4" src="https://avatars.githubusercontent.com/u/89093185?s=400&u=feeacccd767e40fbc4939a6a6331e17bf8b2a2f5&v=4" alt="Avatar of Author">
+			<div class="flex-1 px-2">
+				<p class="text-base font-bold text-base md:text-xl leading-none mb-2">chmuhammadasim</p>
+				<p class="text-gray-600 text-xs md:text-base">Greetings! I'm Muhammad Asim, a driven Computer Science students, enthusiastic about pushing the boundaries of technology.</p>
+			</div>
+			
+		</div>
+
+		<!--Divider-->
+		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
+
+		<!--Next & Prev Links-->
+		<div class="font-sans flex justify-between content-center px-4 pb-12">
+			<div class="text-left">
+				<span class="text-xs md:text-sm font-normal text-gray-600"></span><br>
+				<p><a href="#" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline"></a></p>
+			</div>
+			<div class="text-right">
+				<span class="text-xs md:text-sm font-normal text-gray-600">Next Post &gt;</span><br>
+				<p><a href="./cppBuilding Blocks.html" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Building Blocks of C++</a></p>
+			</div>
+		</div>
+
+
+		<!--/Next & Prev Links-->
+
+	</div>
+	<!--/container-->
+
+	<footer class="bg-white border-t border-gray-400 shadow">
+		<div class="container max-w-4xl mx-auto flex py-8">
+
+			<div class="w-full mx-auto flex flex-wrap">
+				<div class="flex w-full md:w-1/2 ">
+					<div class="px-8">
+						<h3 class="font-bold text-gray-900">About</h3>
+						<p class="py-4 text-gray-600 text-sm">
+							Greetings! I'm Muhammad Asim, a Computer Science student at Air University. My passion lies in pushing technological boundaries, focusing on DevOps, Flutter, and MEAN Stack Development. With a strong foundation in computer science, I thrive in collaborative environments that value teamwork and diverse ideas. Let's connect to create innovative tech solutions and make a difference together.
+						</p>
+					</div>
+				</div>
+
+				<div class="flex w-full md:w-1/2">
+					<div class="px-8">
+						<h3 class="font-bold text-gray-900">Social</h3>
+						<ul class="list-reset items-center text-sm pt-3">
+							<li>
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="https://github.com/chmuhammadasim">Github</a>
+							</li>
+							<li>
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="https://www.linkedin.com/in/muhammad-asim-chattha/">Linkedin</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</footer>
+
+	<script>
+		/* Progress bar */
+		//Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+		var h = document.documentElement,
+			b = document.body,
+			st = 'scrollTop',
+			sh = 'scrollHeight',
+			progress = document.querySelector('#progress'),
+			scroll;
+		var scrollpos = window.scrollY;
+		var header = document.getElementById("header");
+		var navcontent = document.getElementById("nav-content");
+
+		document.addEventListener('scroll', function() {
+
+			/*Refresh scroll % width*/
+			scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+			progress.style.setProperty('--scroll', scroll + '%');
+
+			/*Apply classes for slide in bar*/
+			scrollpos = window.scrollY;
+
+			if (scrollpos > 10) {
+				header.classList.add("bg-white");
+				header.classList.add("shadow");
+				navcontent.classList.remove("bg-gray-100");
+				navcontent.classList.add("bg-white");
+			} else {
+				header.classList.remove("bg-white");
+				header.classList.remove("shadow");
+				navcontent.classList.remove("bg-white");
+				navcontent.classList.add("bg-gray-100");
+
+			}
+
+		});
+
+
+		//Javascript to toggle the menu
+		document.getElementById('nav-toggle').onclick = function() {
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+	</script>
+
+</body>
+
+</html>
