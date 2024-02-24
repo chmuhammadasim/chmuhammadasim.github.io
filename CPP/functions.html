@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>C++</title>
+    <meta name="author" content="chmuhammadasim" />
+    <meta name="description" content="BLog About C++" />
+    <meta name="keywords" content="C++, Compiler, string, int, cout, cin, forloop" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+  </head>
+
+  
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+	<nav id="header" class="fixed w-full z-10 top-0 ">
+
+		<div id="progress" class="h-1 z-20 top-0" style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+
+		<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+
+			<div class="pl-4">
+				<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="./cppIntroduction.html">
+					Getting Started with C++ Programming
+				</a>
+			</div>
+
+			<div class="block lg:hidden pr-4">
+				<button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none">
+					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<title>Menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					</svg>
+				</button>
+			</div>
+
+			<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20" id="nav-content">
+				<ul class="list-reset lg:flex justify-end flex-1 items-center">
+					<li class="mr-3">
+						<a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="https://github.com/chmuhammadasim">Github</a>
+					</li>
+					<li class="mr-3">
+						<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="https://www.linkedin.com/in/muhammad-asim-chattha/">Linkedin</a>
+					</li>
+					<li class="mr-3">
+						<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="https://asimchattha.site">Portfolio</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--Container-->
+	<div class="container w-full md:max-w-3xl mx-auto pt-10 p-5">
+
+		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+			<!--Title-->
+			<div class="font-sans">
+				
+						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">Functions in C++: Building Modular Code</h1>
+						<p class="text-sm md:text-base font-normal text-gray-600">Published 5 Septermber 2023</p>
+			</div>
+            <hr class="border-b-2 border-gray-400 mb-8 mx-4 mt-4">
+
+			<!--Post Content-->
+
+
+			<!--Lead Para-->
+			<p class="py-6">
+				👋 Welcome to the world of functions in C++! Imagine functions as small, reusable tools in your programming toolbox. They allow you to break your code into manageable, modular pieces, making it easier to read, write, and maintain. In this guide, we'll explore what functions are, how to define them, and why they are crucial in C++ programming.
+			</p>
+
+			
+
+
+			<h1 class="py-3 font-sans text-3xl font-bold">What Are Functions?</h1>
+			<p class="py-6">In programming, a function is like a recipe. It's a set of instructions that perform a specific task. Functions are designed to be reusable, so you can call them whenever you need that particular task done, without rewriting the code each time.In programming, a function is like a recipe. It's a set of instructions that perform a specific task. Functions are designed to be reusable, so you can call them whenever you need that particular task done, without rewriting the code each time.</p>
+            
+            
+            <h1 class="py-3 font-sans text-3xl font-bold">Defining a Function</h1>
+			<p class="py-6">To define (create) a function in C++, you need to specify its name, what it does, and the data it needs (parameters). Here's the basic structure of a function:</p>
+			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+return_type function_name(parameter_type parameter_name) {
+	// Function body (instructions)
+	return value; // Optional
+}										  
+				</code>
+			</pre>
+			<ul class="list-disc">
+				<li class="py-3 ">return_type: Specifies the type of value that the function returns. If the function doesn't return anything, use void.</li>
+				<li class="py-3">function_name: The name of your function, which you can choose.</li>
+				<li class="py-3">parameter_type: The type of data that the function needs to do its job.</li>
+                <li class="py-3 ">parameter_name: The name you give to the data the function receives.</li>
+                <li class="py-3">return value: If the function is expected to return a value, you specify it here.</li>
+			</ul>
+
+
+
+            <h1 class="py-3 font-sans text-3xl font-bold">Example: A Simple Function</h1>
+			<p class="py-6">Here's a function called add that takes two integers as parameters and returns their sum:</p>
+            <pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+return_type function_name(parameter_type parameter_name) {
+	int add(int a, int b) {
+		int sum = a + b;
+		return sum;
+	}
+}							  
+				</code>
+			</pre>
+			<p class="py-6">You can call this function like this:</p>
+			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+int result = add(5, 3);							  
+				</code>
+			</pre>
+			<p class="py-6">Now, result contains the value 8.</p>
+
+
+            <h1 class="py-3 font-sans text-xl font-bold">Functions for Reusability</h1>
+			<p class="py-6">One of the primary benefits of functions is code reusability. Imagine you have a complex calculation that needs to be performed in multiple places in your program. Instead of copying and pasting the code everywhere, you can encapsulate it in a function and call that function whenever you need to perform the calculation.</p>
+            
+
+            <h1 class="py-3 font-sans text-xl font-bold">Functions for Clarity</h1>
+			<p class="py-6">Functions make your code easier to read and understand. By giving meaningful names to your functions, you provide a high-level overview of what the code does. This is especially useful when working on larger projects or collaborating with other developers.</p>
+            
+			<h1 class="py-3 font-sans text-xl font-bold">Modularization</h1>
+			<p class="py-6">Functions allow you to divide your program into manageable, reusable parts. Each function can handle a specific task, making your code more organized.</p>
+
+            <h1 class="py-3 font-sans text-3xl font-bold">Functions for Debugging</h1>
+			<p class="py-6">Functions also help with debugging. When you isolate a specific piece of functionality in a function, it becomes easier to test and debug that part of your code. If something goes wrong, you can focus your attention on the relevant function.</p>
+            <p class="py-6">Example:Using a Function for Simple Math</p>
+			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+#include <iostream>
+using namespace std;
+
+// Function to calculate the square of a number
+int square(int x) {
+	return x * x;
+}
+
+int main() {
+	int num = 5;
+	int squared = square(num);
+	
+	cout << "The square of " << num << " is " << squared << endl;
+	
+	return 0;
+}											   
+				</code>
+			</pre>
+			<p class="py-6">In this example, the square function calculates the square of a number, making the code more modular and easier to understand.</p>
+
+
+			<h1 class="py-3 font-sans text-3xl font-bold">Function Return Type</h1>
+			<p class="py-6">Functions can return values using the return statement. The return type in the function declaration specifies the type of value the function will return.</p>
+			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+#include <iostream>
+using namespace std;
+
+// Function declaration
+int square(int x);
+
+int main() {
+	int num = 4;
+	int squared = square(num); // Function call and result assignment
+	cout << "The square of " << num << " is: " << squared << endl;
+	return 0;
+}
+
+// Function definition
+int square(int x) {
+	return x * x;
+}																  
+				</code>
+			</pre>
+			<p class="py-6">Explanation:</p>
+			<ul class="list-disc">
+				<li class="py-3 ">We declare the square function with an int return type.</li>
+				<li class="py-3">In main, we call square(4) and assign the result to squared.</li>
+				<li class="py-3">The square function returns the square of its parameter.</li>
+			</ul>
+
+
+
+                <h1 class="py-3 font-sans text-3xl font-bold">In Conclusion</h1>
+                <p class="py-6">Functions in C++ are essential for building modular, maintainable, and readable code. They encapsulate specific tasks, promote code reuse, and simplify debugging. By mastering functions, you'll enhance your programming skills and create more efficient and organized programs. So, go ahead, break down your code into functions, and let them do the heavy lifting in your C++ projects!</p>
+            
+			<blockquote class="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12">Design and programming are human activities; forget that and all is lost.</blockquote>
+
+			
+
+
+			<!--/ Post Content-->
+
+		</div>
+
+
+		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
+
+		<!--Author-->
+		<div class="flex w-full items-center font-sans px-4 py-12">
+			<img class="w-10 h-10 rounded-full mr-4" src="https://avatars.githubusercontent.com/u/89093185?s=400&u=feeacccd767e40fbc4939a6a6331e17bf8b2a2f5&v=4" alt="Avatar of Author">
+			<div class="flex-1 px-2">
+				<p class="text-base font-bold text-base md:text-xl leading-none mb-2">chmuhammadasim</p>
+				<p class="text-gray-600 text-xs md:text-base">Greetings! I'm Muhammad Asim, a driven Computer Science students, enthusiastic about pushing the boundaries of technology.</p>
+			</div>
+			
+		</div>
+
+		<!--Divider-->
+		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
+
+		<!--Next & Prev Links-->
+		<div class="font-sans flex justify-between content-center px-4 pb-12">
+			<div class="text-left">
+				<span class="text-xs md:text-sm font-normal text-gray-600"></span><br>
+				<p><a href="./loopincpp.html" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Loops in C++</a></p>
+			</div>
+			<div class="text-right">
+				<span class="text-xs md:text-sm font-normal text-gray-600">Next Post &gt;</span><br>
+				<p><a href="" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline"></a></p>
+			</div>
+		</div>
+
+
+		<!--/Next & Prev Links-->
+
+	</div>
+	<!--/container-->
+
+	<footer class="bg-white border-t border-gray-400 shadow">
+		<div class="container max-w-4xl mx-auto flex py-8">
+
+			<div class="w-full mx-auto flex flex-wrap">
+				<div class="flex w-full md:w-1/2 ">
+					<div class="px-8">
+						<h3 class="font-bold text-gray-900">About</h3>
+						<p class="py-4 text-gray-600 text-sm">
+							Greetings! I'm Muhammad Asim, a Computer Science student at Air University. My passion lies in pushing technological boundaries, focusing on DevOps, Flutter, and MEAN Stack Development. With a strong foundation in computer science, I thrive in collaborative environments that value teamwork and diverse ideas. Let's connect to create innovative tech solutions and make a difference together.
+						</p>
+					</div>
+				</div>
+
+				<div class="flex w-full md:w-1/2">
+					<div class="px-8">
+						<h3 class="font-bold text-gray-900">Social</h3>
+						<ul class="list-reset items-center text-sm pt-3">
+							<li>
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="https://github.com/chmuhammadasim">Github</a>
+							</li>
+							<li>
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="https://www.linkedin.com/in/muhammad-asim-chattha/">Linkedin</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</footer>
+
+	<script>
+		/* Progress bar */
+		//Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+		var h = document.documentElement,
+			b = document.body,
+			st = 'scrollTop',
+			sh = 'scrollHeight',
+			progress = document.querySelector('#progress'),
+			scroll;
+		var scrollpos = window.scrollY;
+		var header = document.getElementById("header");
+		var navcontent = document.getElementById("nav-content");
+
+		document.addEventListener('scroll', function() {
+
+			/*Refresh scroll % width*/
+			scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+			progress.style.setProperty('--scroll', scroll + '%');
+
+			/*Apply classes for slide in bar*/
+			scrollpos = window.scrollY;
+
+			if (scrollpos > 10) {
+				header.classList.add("bg-white");
+				header.classList.add("shadow");
+				navcontent.classList.remove("bg-gray-100");
+				navcontent.classList.add("bg-white");
+			} else {
+				header.classList.remove("bg-white");
+				header.classList.remove("shadow");
+				navcontent.classList.remove("bg-white");
+				navcontent.classList.add("bg-gray-100");
+
+			}
+
+		});
+
+
+		//Javascript to toggle the menu
+		document.getElementById('nav-toggle').onclick = function() {
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+	</script>
+
+</body>
+
+</html>
