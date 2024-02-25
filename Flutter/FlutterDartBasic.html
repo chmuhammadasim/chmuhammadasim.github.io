@@ -63,8 +63,8 @@
 			<!--Title-->
 			<div class="font-sans">
 				
-						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">Getting Started with Flutter: A Beginner-Friendly Guide</h1>
-						<p class="text-sm md:text-base font-normal text-gray-600">Published 24 Feb 2024</p>
+						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">Getting Started with Flutter: Basic Concepts of Dart programming</h1>
+						<p class="text-sm md:text-base font-normal text-gray-600">Published 25 Feb 2024</p>
 			</div>
             <hr class="border-b-2 border-gray-400 mb-8 mx-4 mt-4">
 
@@ -73,57 +73,122 @@
 
 			<!--Lead Para-->
 			<p class="py-6">
-				👋 Welcome, aspiring Flutter developers! Are you eager to explore the world of mobile app development and embark on your coding journey? Well, you're in luck! In this beginner-friendly guide, we'll introduce you to the exciting realm of Flutter programming. Whether you're a complete newbie or have some coding experience, we'll start from the very beginning and guide you through each step.
+				👋 Let's delve into the basics of Dart programming, covering conditions, loops, and functions, with easy-to-understand explanations and examples for each concept.
 			</p>
 
-			
-
-
-			<h1 class="py-3 font-sans text-3xl font-bold">What is Flutter?</h1>
-			<p class="py-6">Flutter is a powerful and versatile framework for building cross-platform mobile applications. Developed by Google, it allows you to create beautiful, natively compiled apps for iOS, Android, and the web from a single codebase. Flutter is renowned for its fast development cycle, expressive UI, and native performance.</p>
-            
-            
-            <h1 class="py-3 font-sans text-3xl font-bold">Why Learn Flutter?</h1>
-			<p class="py-6">Learning Flutter opens up a world of possibilities in mobile app development. With Flutter skills in your toolkit, you can build stunning, high-performance apps that run seamlessly on multiple platforms. Whether you're interested in creating personal projects, freelancing, or pursuing a career in app development, Flutter offers boundless opportunities.</p>
-			
-            <h1 class="py-3 font-sans text-3xl font-bold">Setting Up Your Environment</h1>
-			<p class="py-6">Before we dive into writing Flutter code, let's ensure you have the right tools set up. To get started, you'll need to set up your development environment, including installing Flutter SDK and configuring your preferred code editor. Let's walk through the process using Visual Studio Code (VS Code) & Android Studio, a popular choice among Flutter developers.</p>
-            
-            <h1 class="py-3 font-sans text-xl font-bold">Installing Visual Studio Code (VS Code)</h1>
-			<p class="py-6">Visual Studio Code is a lightweight, powerful code editor that's perfect for C++ programming. Here's how you can get it up and running:</p>
+			 
+            <h1 class="py-3 font-sans text-xl font-bold">Conditions (if-else statements)</h1>
+			<p class="py-6">Conditions allow your program to make decisions based on whether certain conditions are met. In Dart, you primarily use the if, else if, and else statements for this purpose.</p>
             <ul class="list-disc">
-				<li class="py-3 ">Go to the official Visual Studio Code website and download the version compatible with your operating system (Windows, macOS, or Linux).</li>
-				<li class="py-3">Run the installer you downloaded and follow the on-screen instructions to install Visual Studio Code. You can typically leave the default settings unchanged.</li>
-				<li class="py-3">Open Visual Studio Code after installation. Navigate to the Extensions view by clicking on the square icon on the sidebar or pressing Ctrl+Shift+X. Search for "Flutter" and "Dart" extensions in the Extensions Marketplace. Click on "Install" for both extensions to install them.</li>
-                <li class="py-3 ">Once the extensions are installed, open the Command Palette by pressing Ctrl+Shift+P (or Cmd+Shift+P on macOS). Type "Flutter: Install SDK" and select the option to install Flutter SDK. Follow the prompts to download and install the Flutter SDK.</li>
-                <li class="py-3">With Flutter and Dart extensions installed, you can now create a new Flutter project in Visual Studio Code. Open the Command Palette (Ctrl+Shift+P) and type "Flutter: New Project". Follow the prompts to set up your project name, location, and other settings.</li>
+				<li class="py-3 ">The if statement checks a condition and executes a block of code if the condition is true.</li>
+				<li class="py-3">The else if statement allows you to check additional conditions if the previous conditions were not met.</li>
+				<li class="py-3">The else statement provides a fallback option if none of the previous conditions are true.</li>
 			</ul>
-            <p class="py-6">Congratulations! You've successfully set up your environment for Flutter development using Visual Studio Code. Now, you're ready to dive into writing your first Flutter app.</p>
+			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+void main() {
+	int number = 10;
+	
+	if (number > 0) {
+		print('Number is positive');
+	} else if (number < 0) {
+		print('Number is negative');
+	} else {
+		print('Number is zero');
+	}
+	}
+					  
+				</code>
+			</pre>
 
-            <h1 class="py-3 font-sans text-xl font-bold">Installing Android Studio</h1>
-			<p class="py-6">Android Studio provides a comprehensive environment for Flutter development, including tools for building, testing, and debugging your apps. Here's how you can set it up:</p>
+
+			<h1 class="py-3 font-sans text-xl font-bold">Loops (for, while, do-while)</h1>
+			<p class="py-6">Loops are used to execute a block of code repeatedly until a specified condition is no longer true. Dart supports three types of loops: for, while, and do-while.</p>
             <ul class="list-disc">
-				<li class="py-3 ">Go to the official Android Studio website and download the version compatible with your operating system (Windows, macOS, or Linux).</li>
-				<li class="py-3">Run the installer you downloaded and follow the on-screen instructions to install Android Studio. You can typically leave the default settings unchanged.</li>
-				<li class="py-3">Open Android Studio after installation.
-                    Go to File > Settings (on Windows/Linux) or Android Studio > Preferences (on macOS).
-                    In the Settings/Preferences dialog, navigate to Plugins.
-                    Search for "Flutter" and "Dart" plugins in the Marketplace.
-                    Click on "Install" for both plugins to install them.</li>
-                <li class="py-3 ">Once the plugins are installed, navigate to File > Settings (on Windows/Linux) or Android Studio > Preferences (on macOS).
-                    In the Settings/Preferences dialog, navigate to Languages & Frameworks > Flutter.
-                    Set the path to the Flutter SDK that you downloaded and extracted earlier.</li>
-                <li class="py-3">With Flutter and Dart plugins installed, you can now create a new Flutter project in Android Studio.
-                    Click on File > New > New Flutter Project.
-                    Follow the prompts to set up your project name, location, and other settings.</li>
+				<li class="py-3 ">A for loop is typically used when you know how many times you want to execute a block of code.</li>
+				<li class="py-3">A while loop continues to execute a block of code as long as the specified condition remains true.</li>
+				<li class="py-3">A do-while loop is similar to a while loop, except that it always executes the block of code at least once before checking the condition.</li>
 			</ul>
-            <p class="py-6">Congratulations! You've successfully set up your environment for Flutter development using Android Studio.</p>
+			<p class="py-6">For Loop</p>
+			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+void main() {
+	for (int i = 1; i <= 5; i++) {
+		print('Number: $i');
+	}
+	}										
+				</code>
+			</pre>
+
+			<p class="py-6">While Loop</p>
+			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+void main() {
+	int count = 1;
+	
+	while (count <= 5) {
+		print('Count: $count');
+		count++;
+	}
+	}															  
+				</code>
+			</pre>
+
+			<p class="py-6">Do-While Loop</p>
+			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+void main() {
+	int count = 1;
+	
+	do {
+		print('Count: $count');
+		count++;
+	} while (count <= 5);
+	}																					
+				</code>
+			</pre>
+
+
+			<h1 class="py-3 font-sans text-xl font-bold">Functions</h1>
+			<p class="py-6">Functions are reusable blocks of code that perform specific tasks. They help organize code, promote reusability, and make it easier to maintain and debug programs.</p>
+            <ul class="list-disc">
+				<li class="py-3 ">Functions in Dart consist of a function signature (name, parameters) and a function body (block of code).</li>
+				<li class="py-3">Parameters are variables passed to the function to provide input values.</li>
+				<li class="py-3">The return type specifies the type of value that the function will return.</li>
+			</ul>
+			<p class="py-6">Function without parameters</p>
+			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+void greet() {
+	print('Hello, World!');
+	}
+	
+	void main() {
+	greet(); // Call the function
+	}															  
+				</code>
+			</pre>
+
+			<p class="py-6">Function with parameters and return value</p>
+			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+				<code class="break-words whitespace-pre-wrap">
+int add(int a, int b) {
+	return a + b;
+	}
+	
+	void main() {
+	int result = add(5, 3);
+	print('Result: $result');
+	}																					
+				</code>
+			</pre>
             
             
             
-                <p class="py-6">Now, you're ready to dive into writing your first Flutter app. Stay tuned for our next blog post, where we'll guide you through building your first Flutter app and exploring its features. Happy coding!</p>
+                <p class="py-6">Mastering these fundamental concepts in Dart programming lays a strong foundation for developing more complex applications. Experiment with different scenarios and practice writing code to solidify your understanding. As you progress in your learning journey, you'll encounter more advanced topics and techniques that build upon these basics. Keep exploring, practicing, and expanding your Dart programming skills!</p>
             
-			<blockquote class="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12">Before Flutter there was Flirting</blockquote>
+			<blockquote class="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12">“Learning to code is useful no matter what your career ambitions are.”
+				—Arianna Huffington, Founder, The Huffington Post</blockquote>
 
 			
 
@@ -171,12 +236,12 @@
 		<!--Next & Prev Links-->
 		<div class="font-sans flex justify-between content-center px-4 pb-12">
 			<div class="text-left">
-				<span class="text-xs md:text-sm font-normal text-gray-600"></span><br>
-				<p><a href="" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline"></a></p>
+				<span class="text-xs md:text-sm font-normal text-gray-600">&lt; Previous Post</span><br>
+				<p><a href="./FlutterIntroduction.html" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Flutter Introduction</a></p>
 			</div>
 			<div class="text-right">
 				<span class="text-xs md:text-sm font-normal text-gray-600">Next Post &gt;</span><br>
-				<p><a href="./FlutterDartBasic.html" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Dart Basic</a></p>
+				<p><a href="" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Coming soon</a></p>
 			</div>
 		</div>
 
